@@ -1,21 +1,18 @@
 <?
 session_start();
 
-echo session_id();
-
-if(isset($_GET['success'])){
-	echo "<h1>Вы авторизованы!!!</h1>";
+if(isset($_GET['success'])) {
+	echo "<h1>Вы авторизованы!</h1>";
 }
-else{
-	
-?>
+else { ?>
 
 <form action="server.php" method="POST">
 	<p>Введите логин</p>
-	<input type="text" name="login" value=<?=$_SESSION['login']?>>
+	<input type = "text" name = "login" value = <?=$_SESSION['login']?> >
 	<p>Введите пароль</p>
-	<input type="password" name="pass" value=<?=$_SESSION['pass']?>><br><br>
-	
+	<input type = "password" name = "pass" value = <?=$_SESSION['pass']?> > 
+	<br><br>
 	<input type="submit" value="Войти">
 </form>
-<?}?>
+
+<? } ?>
