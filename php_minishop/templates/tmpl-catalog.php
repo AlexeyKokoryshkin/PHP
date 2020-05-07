@@ -5,18 +5,18 @@
 <div class="products">
     <?php foreach( $goods as $good ): ?>
         <div class="shopUnit">
-            <img src="<?php echo $good['img']; ?>" />
+            <img src="<?= $good['img']; ?>" />
         
         <div class="shopUnitName">
-            <?php echo $good['name']; ?>
+            <?= $good['name']; ?>
         </div>
         <div class="shopUnitShortDesc">
-            <?php echo $good['desc'] ?>
+            <?= $good['desc'] ?>
         </div>
         <div class="shopUnitPrice">
-            <?php echo $good['price'] ?>
+            <?= $good['price'] ?>
         </div>
-        <a href="index.php?page=product&id=<?php echo $good['id']; ?>" class="shopUnitMore">
+        <a href="index.php?page=product&id=<?= $good['id']; ?>" class="shopUnitMore">
             Подробнее
         </a>
     </div>

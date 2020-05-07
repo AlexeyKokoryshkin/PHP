@@ -1,7 +1,7 @@
 <div id="content">
     <?php
         $page = $_GET['page'];
-        if(!isset($page)) {
+        if(empty($page)) {
             require('./templates/tmpl-main.php');
         } elseif($page == 'shop') {
             require('./templates/tmpl-catalog.php');
@@ -15,7 +15,7 @@
                 }
             }
             require('./templates/tmpl-openedProduct.php');
-        } elseif ($page == '404') {
+        } else {
             require('404.php');
         }
     ?>

@@ -1,14 +1,14 @@
 <div id="openedProduct-img">
-    <img src="<?php echo $good['img']; ?>">
+    <img src="<?= $good['img']; ?>">
 </div>
 <div id="openedProduct-content">
     <h1 id="openedProduct-name">
-       <?php echo $good['name']; ?>
+       <?= $good['name']; ?>
     </h1>
     <div id="openedProduct-desc">
-        <?php echo $good['desc']; ?>
+        <?= $good['desc']; ?>
     </div>
     <div id="openedProduct-price">
-        <?php echo $good['price']; ?>
+        <?= $good['price']; ?>
     </div>
 </div>
